@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Cats Popularity in US Households",
+  "width": 800,
+  "height": 600,
+  "data": {
+    "url": "https://raw.githubusercontent.com/ZhanZhynn/3179-Homework_Week9/main/js/us_states.topojson.txt",
+    "format": {
+          "type": "topojson",
+          "feature": "cb_2018_us_state_500k"
+        }
+  },
+  
+  "transform": [{
+      "lookup": "properties.NAME",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/ZhanZhynn/3179-Homework_Week9/main/data/catsvdogs.csv"
+        },
+        "key": "Location",
+        "fields": ["CatPopulation","NumberofPetHouseholds"]
+      }
+    },
+    {"calculate": "datum.CatPopulation", "as": "Cat Population (Per 1000)"}
+  ],
+
+  "projection": {
+    "type": "albersUsa"
+  },  
+  
+  "mark": {
+    "type": "geoshape",
+    "stroke": "#757575"
+    
+    },
+  
+  "encoding": {
+    "color": {
+      "field": "Cat Population (Per 1000)",
+      "type": "quantitative",
+      "scale": {
+        "type": "threshold",
+        "domain": [500, 1000, 2000,3000,4000,5000],
+        "range": ["#fee5d9","#fcbba1", "#fc9272", "#fb6a4a","#ef3b2c","#cb181d","#99000d"]
+        }
+       
+           },
+    "tooltip": [
+      {"field": "properties.NAME", "type": "nominal", "title": "State"},
+      {"field": "Cat Population (Per 1000)", "type": "quantitative"}
+    ]
+  }
+  
+}

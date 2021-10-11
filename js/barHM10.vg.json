@@ -1,0 +1,108 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/ZhanZhynn/3179-Homework_Week9/main/data/catsvdogs.csv"
+    },
+    "title": "Number of Pet Households",
+  
+  
+    "encoding": {
+          "x": {
+            "field": "Location", 
+            "type": "nominal",
+            "scale": {},
+            "axis": {"labels": false},
+            "sort": {}},
+          "y": {
+            "aggregate": "mean",
+            "field": "NumberofPetHouseholds",
+            "type": "quantitative"
+          }
+        },
+        
+      "layer": [
+      {
+        "params": [
+          {"name": "continent_highlight", 
+          "select": {"type": "point","fields":["Region"]}, "bind": "legend"}
+        ],  
+        "mark": "bar",
+        "encoding": {
+          "x": {
+            "field": "Location", 
+            "type": "nominal",
+            "sort": "color",
+            "axis": {"labels": false}},
+          "y": {
+            "aggregate": "mean",
+            "field": "NumberofPetHouseholds",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "Region",
+            "type": "nominal",
+            "scale": {
+              "domain": [
+              "Midwest",
+              "Northeast",
+              "South",
+              "West"            
+              ],
+              "range": [
+              "#e41a1c",
+              "#984ea3",
+              "#ff7f00",
+              "#a6cee3"
+              ]
+            }
+          },
+          "opacity": {
+                "condition": {"param": "continent_highlight", "value": 1},
+                "value": 0.1
+              },
+          "tooltip": [
+            {"field": "Location", "type": "nominal", "title": "States"},
+            {
+              "field": "NumberofPetHouseholds",
+              "type": "quantitative",
+              "format": ",",
+              "title": "Number of Pets Households"
+            }
+          ]
+        }
+      },
+  
+      {
+        "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "line-bottom",
+        "dx": 0,
+        "dy": -3,
+        "fontSize": 11.5,
+        "fontStyle": "italic"
+        },
+        "encoding": {
+        "text": {"field": "Location", "type": "nominal"},
+        "color": {"value": "black"},
+        "opacity": {
+          "condition": {
+          "test": "datum['Location'] == 'Ohio' || datum['Location'] == 'Texas'|| datum['Location'] == 'California' || datum['Location'] == 'New York'",
+          "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+        {"field": "Location", "type": "nominal","title": "States"},
+        {
+              "field": "NumberofPetHouseholds",
+              "type": "quantitative",
+              "format": ",",
+              "title": "Number of Pets Households"
+        }
+        ]
+        }
+      }
+  
+    ]
+  }
