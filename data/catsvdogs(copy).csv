@@ -1,0 +1,51 @@
+Location,NumberofHouseholds(in1000),Percentageofhouseholdswithpets,NumberofPetHouseholds(in1000),PercentageofDogOwners,DogOwningHouseholds(1000s),MeanNumberofDogsperhousehold,DogPopulation(in1000),PercentageofCatOwners,CatOwningHouseholds,MeanNumberofCats,CatPopulation,State,StateCode,Region,Division
+Alabama,"1,828",59.5,"1,088",44.1,807,1.7,"1,410",27.4,501,2.5,"1,252",Alabama,AL,South,East South Central
+Arizona,"2,515",59.5,"1,497",40.1,"1,008",1.8,"1,798",29.6,743,1.9,"1,438",Arizona,AZ,West,Mountain
+Arkansas,1148,62.4,716,47.9,550,2,"1,097",30.6,351,2.3,810,Arkansas,AR,South,West South Central
+California,"12,974",52.9,"6,865",32.8,"4,260",1.6,"6,687",28.3,"3,687",1.9,"7,118",California,CA,West,Pacific
+Colorado,"1,986",61.3,"1,217",42.5,845,1.6,"1,349",32.3,642,1.9,1191,Colorado,CO,West,Mountain
+Connecticut,"1,337",54.4,728,28.3,379,1.3,507,31.9,427,1.9,796,Connecticut,CT,Northeast,New England
+Delaware,334,56.6,189,33.7,113,1.4,163,33.7,113,1.7,187,Delaware,DE,South,South Atlantic
+District of Columbia,287,21.9,63,13.1,38,1.1,42,11.6,33,1.9,63,District of Columbia,DC,South,South Atlantic
+Florida,"7,609",54.4,"4,138",35.7,"2,718",1.5,"4,210",27.3,"2,079",2.1,"4,375",Florida,FL,South,South Atlantic
+Georgia,"3,798",55.1,"2,093",40.1,"1,522",1.6,"2,479",27.3,"1,037",2.1,"2,162",Georgia,GA,South,South Atlantic
+Idaho,568,62,352,42.7,242,1.5,357,34.6,196,2,393,Idaho,ID,West,Mountain
+Illinois,"5,026",51.8,"2,602",32.4,"1,627",1.5,"2,365",26.3,"1,321",1.9,"2,453",Illinois,IL,Midwest,East North Central
+Indiana,"2,478",59.9,"1,484",39.9,989,1.6,"1,619",34.4,852,2.2,"1,912",Indiana,IN,Midwest,East North Central
+Iowa,"1,219",53.6,654,33.4,407,1.5,610,30.3,370,2.2,805,Iowa,IA,Midwest,West North Central
+Kansas,"1,133",61,691,42.3,480,1.6,774,33.3,378,1.9,731,Kansas,KS,Midwest,West North Central
+Kentucky,"1,777",61.6,"1,094",45.9,816,1.9,"1,531",36.8,654,2.1,"1,349",Kentucky,KY,South,East South Central
+Louisiana,"1,702",55.1,937,36.4,619,1.8,1115,25.9,441,2,877,Louisiana,LA,South,West South Central
+Maine,548,62.9,345,34.6,190,1.6,300,46.4,254,1.9,498,Maine,ME,Northeast,New England
+Maryland,"2,169",52.3,"1,134",30.8,667,1.4,915,29.8,645,2.6,"1,677",Maryland,MD,South,South Atlantic
+Massachusetts,"2,618",50.4,"1,318",23.6,618,1.4,850,34.1,892,1.8,"1,593",Massachusetts,MA,Northeast,New England
+Michigan,"3,804",55.4,"2,108",34.6,"1,318",1.5,"2,036",31.3,"1,192",2,"2,420",Michigan,MI,Midwest,East North Central
+Minnesota,"2,163",53,"1,146",31.9,690,1.4,934,29.7,643,2,"1,264",Minnesota,MN,Midwest,West North Central
+Mississippi,1115,56.4,629,45.2,504,1.7,846,29.1,324,2.1,668,Mississippi,MS,South,East South Central
+Missouri,"2,498",61.4,"1,534",45.9,"1,148",1.7,"1,978",32.2,805,2.1,"1,653",Missouri,MO,Midwest,West North Central
+Montana,410,61.3,251,41.2,169,1.7,282,33.6,138,2,277,Montana,MT,West,Mountain
+Nebraska,710,51.3,364,33.8,240,1.6,374,31.3,222,2.3,514,Nebraska,NE,Midwest,West North Central
+Nevada,986,55.6,548,37.1,366,1.6,578,30.3,299,2.1,625,Nevada,NV,West,Mountain
+New Hampshire,508,56.8,289,30.3,154,1.4,212,34.2,174,1.8,309,New Hampshire,NH,Northeast,New England
+New Jersey,"3,177",50.7,"1,611",32.4,"1,028",1.3,"1,340",25.3,803,1.8,"1,468",New Jersey,NJ,Northeast,Middle Atlantic
+New Mexico,773,67.6,523,46,356,2,703,32,247,2.2,533,New Mexico,NM,West,Mountain
+New York,"7,512",50.6,"3,802",29,"2,177",1.4,"3,054",29.1,"2,189",1.9,"4,261",New York,NY,Northeast,Middle Atlantic
+North Carolina,"3,701",56.4,"2,089",40.3,"1,491",1.7,"2,518",29.5,"1,090",2,"2,220",North Carolina,NC,South,South Atlantic
+North Dakota,272,53.9,147,36.1,98,1.4,139,31.4,85,2,174,North Dakota,ND,Midwest,West North Central
+Ohio,"4,661",57.4,"2,677",36.6,"1,708",1.6,"2,730",33.3,"1,553",2.4,"3,786",Ohio,OH,Midwest,East North Central
+Oklahoma,"1,479",58.9,872,43.2,638,2.1,"1,327",32.6,482,2.2,"1,041",Oklahoma,OK,South,West South Central
+Oregon,"1,505",63.6,957,38.8,584,1.6,917,40.2,605,2,"1,185",Oregon,OR,West,Pacific
+Pennsylvania,"5,172",56.9,"2,942",32.9,"1,702",1.5,"2,485",33.8,"1,748",2,"3,544",Pennsylvania,PA,Northeast,Middle Atlantic
+Rhode Island,434,53,230,29.3,127,1.3,161,27.6,120,1.8,212,Rhode Island,RI,Northeast,New England
+South Carolina,"1,759",54.1,951,38.6,678,1.8,"1,191",27.8,490,2.1,"1,039",South Carolina,SC,South,South Atlantic
+South Dakota,333,65.6,219,42.8,143,1.5,220,39.1,130,2.2,290,South Dakota,SD,Midwest,West North Central
+Tennessee,"2,583",59.6,"1,540",44.1,"1,140",1.9,"2,157",29.8,770,2.3,"1,749",Tennessee,TN,South,East South Central
+Texas,"9,002",58.5,"5,265",44,"3,960",1.8,"7,163",28.3,"2,544",2.2,"5,565",Texas,TX,South,West South Central
+Utah,930,51.2,476,29.4,273,1.5,410,24.6,229,2,455,Utah,UT,West,Mountain
+Vermont,265,70.8,188,37.7,100,1.4,142,49.5,131,1.8,234,Vermont,VT,Northeast,New England
+Virginia,"3,017",53.4,"1,611",35.4,"1,069",1.6,"1,699",29,876,2.1,"1,855",Virginia,VA,South,South Atlantic
+Washington,"2,632",62.7,"1,649",36.3,954,1.7,"1,609",39,"1,028",1.8,"1,844",Washington,WA,West,Pacific
+West Virginia,765,62.1,475,45.8,350,1.8,648,38.1,291,2.2,628,West Virginia,WV,South,South Atlantic
+Wisconsin,"2,350",57.5,"1,352",33.9,796,1.4,"1,138",33,776,1.9,"1,510",Wisconsin,WI,Midwest,East North Central
+Wyoming,221,61.8,137,38.8,86,1.5,125,33.9,75,1.9,144,Wyoming,WY,West,Mountain
+,"117,791","2,786","65,787","1,812","42,942",78,"69,294","1,551","35,675",100,"73,147",,,,
