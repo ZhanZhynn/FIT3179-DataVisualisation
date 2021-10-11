@@ -1,4 +1,4 @@
-Location,NumberofHouseholds(in1000),Percentageofhouseholdswithpets,NumberofPetHouseholds(in1000),PercentageofDogOwners,DogOwningHouseholds(1000s),MeanNumberofDogsperhousehold,DogPopulation(in1000),PercentageofCatOwners,CatOwningHouseholds,MeanNumberofCats,CatPopulation,State,StateCode,Region,Division
+Location,NumberofHouseholds,Percentageofhouseholdswithpets,NumberofPetHouseholds,PercentageofDogOwners,DogOwningHouseholds,MeanNumberofDogsperhousehold,DogPopulation,PercentageofCatOwners,CatOwningHouseholds,MeanNumberofCats,CatPopulation,State,StateCode,Region,Division
 Alabama,1828,59.5,1088,44.1,807,1.7,1410,27.4,501,2.5,1252,Alabama,AL,South,East South Central
 Arizona,2515,59.5,1497,40.1,1008,1.8,1798,29.6,743,1.9,1438,Arizona,AZ,West,Mountain
 Arkansas,1148,62.4,716,47.9,550,2,1097,30.6,351,2.3,810,Arkansas,AR,South,West South Central
