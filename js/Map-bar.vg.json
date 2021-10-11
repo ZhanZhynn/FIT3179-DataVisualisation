@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {
-      "url": "https://raw.githubusercontent.com/ZhanZhynn/3179-Homework_Week9/main/data/catsvdogs.csv"
+      "url": "https://raw.githubusercontent.com/ZhanZhynn/3179-Visualization2/main/data/catsvdogs.csv"
     },
     "projection": {"type": "albersUsa"},
     "vconcat": [
@@ -29,7 +29,7 @@
             "width": 800,
             "height": 600,
             "data": {
-              "url": "https://raw.githubusercontent.com/ZhanZhynn/3179-Homework_Week9/main/js/us_states.topojson.txt",
+              "url": "https://raw.githubusercontent.com/ZhanZhynn/3179-Visualization2/main/js/us_states.topojson.txt",
               "format": {
                     "type": "topojson",
                     "feature": "cb_2018_us_state_500k"
@@ -40,13 +40,13 @@
                 "lookup": "properties.NAME",
                 "from": {
                   "data": {
-                    "url": "https://raw.githubusercontent.com/ZhanZhynn/3179-Homework_Week9/main/data/catsvdogs.csv"
+                    "url": "https://raw.githubusercontent.com/ZhanZhynn/3179-Visualization2/main/data/catsvdogs.csv"
                   },
                   "key": "Location",
                   "fields": ["NumberofPetHouseholds","NumberofHouseholds","Region"]
                 }
               },
-              {"calculate": "datum.NumberofPetHouseholds/datum.NumberofHouseholds*100", "as": "Pet Owners per 100 Households"}
+              {"calculate": "datum.NumberofPetHouseholds(in1000)/datum.NumberofHouseholds(in1000)	*100", "as": "Pet Owners per 100 Households"}
             ],
   
             "projection": {
@@ -97,7 +97,7 @@
                   },
                 "y": {
                   "aggregate": "mean",
-                  "field": "NumberofPetHouseholds",
+                  "field": "NumberofPetHouseholds(in1000)",
                   "type": "quantitative"
                 },
                 "color": {
@@ -113,7 +113,7 @@
                 "tooltip": [
                   {"field": "Location", "type": "nominal", "title": "States"},
                   {
-                    "field": "NumberofPetHouseholds",
+                    "field": "NumberofPetHouseholds(in1000)",
                     "type": "quantitative",
                     "format": ",",
                     "title": "Number of Pets Households"
@@ -127,7 +127,7 @@
               "encoding": {
                 "y": {
                   "aggregate": "mean",
-                  "field": "NumberofPetHouseholds",
+                  "field": "NumberofPetHouseholds(in1000)",
                   "type": "quantitative"
                 },
                 "color": {"value": "firebrick"},
