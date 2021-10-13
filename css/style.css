@@ -1,0 +1,48 @@
+body{
+    background-color: #f0f0f0 ;
+  }
+
+.vis-container {
+    width: auto;
+    margin-right: 20px;
+}
+.vis-container-pyramid{
+    width: auto;
+    position: absolute;
+    right:35px;
+}
+.vis-container-box{
+    padding-left: 124px;
+}
+
+.page {
+    width: 800px;
+    background-color: #e0ecf4;
+    margin: auto;
+    padding: 50px;
+    padding-top: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.hr3 {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #DDD, transparent);
+    padding-top: 5px;
+}
+
+.description-right {
+    padding-left: 20px;
+}
+.description-left{
+    padding-right: 20px;
+    margin-right: -100px;
+  }
+.description-middle{
+    padding-right: 20px;
+    margin-right: 40px;
+}
+
+.pure-g{
+    margin-bottom: 25px;
+}
