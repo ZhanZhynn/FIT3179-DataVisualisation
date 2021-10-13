@@ -3,7 +3,7 @@ body{
   }
 
 .vis-container {
-    width: 800;
+    width: auto;
     margin-right: 20px;
 }
 .vis-container-pyramid{
@@ -20,7 +20,7 @@ body{
     background-color: #e0ecf4;
     margin: auto;
     padding: 50px;
-    padding-top: 10px;
+    padding-top: 35px;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
