@@ -1,0 +1,207 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A population pyramid for the US in 2000.",
+  "data": { "url": "https://raw.githubusercontent.com/ZhanZhynn/FIT3179-Visualization2/main/data/catsvdogs.csv"},
+
+
+"spacing": 0,
+"hconcat": [
+  {
+    "layer": [
+      {
+        "title": "Cats",
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "field": "Location", "axis": null, "sort": "ascending"
+          },
+          "x": {
+            "aggregate": "sum", "field": "PercentageofCatOwners",
+            "title": "Percentage of Cat Owners",
+            "axis": {"format": "s"},
+            "sort": "descending"
+          },
+          "color": {
+            "field": "PercentageofCatOwners",
+            "scale": {"range": ["#675193"]},
+            "legend": null
+          },
+          "tooltip": [
+              {"field": "Location", "type": "nominal", "title": "States"},
+              {
+                "field": "PercentageofCatOwners",
+                "type": "quantitative",
+                "format": ",",
+                "title": "Percentage of Cat Owners"
+              }
+            ]
+        }
+      },
+
+      {
+        "mark": {
+          "type": "text",
+          "align": "right",
+          "dx": -5,
+          "stroke": "white",
+          "strokeWidth": 5
+        },
+        "encoding": {
+          "y": {
+            "field": "Location",
+            "title": null,
+            "axis": null,
+            "sort": "descending"
+          },
+          "x": {
+            "aggregate": "sum",
+            "field": "PercentageofCatOwners",
+            "axis": {"format": "s"},
+            "scale": {"domain": [0, 60]}
+          },
+          "color": {"field": "PercentageofCatOwners", "type": "nominal"},
+          "key": {"field": "Location"},
+          "text": {
+            "aggregate": "sum",
+            "field": "PercentageofCatOwners",
+            "type": "ordinal",
+            "format": ","
+          }
+        }
+      },
+      {
+        "mark": {"type": "text", "align": "right", "dx": -5},
+        "encoding": {
+          "y": {
+            "field": "Location",
+            "title": null,
+            "axis": null,
+            "sort": "descending"
+          },
+          "x": {
+            "aggregate": "sum",
+            "field": "PercentageofCatOwners",
+            "axis": {"format": "s"},
+            "scale": {"domain": [0, 60]}
+          },
+          "color": {"field": "PercentageofCatOwners", "type": "nominal"},
+          "key": {"field": "Location"},
+          "text": {
+            "aggregate": "sum",
+            "field": "PercentageofCatOwners",
+            "type": "ordinal",
+            "format": ","
+          }
+        }
+      }
+    ]
+  },
+  
+  {
+    "width": 20,
+    "view": {"stroke": null},
+    "mark": {"type": "text", "align": "center", "dx": 0},
+    "encoding": {
+      "y": {
+        "field": "Location",
+        "type": "ordinal",
+        "axis": null,
+        "sort": "ascending"
+      },
+      "text": {"field": "Location", "type": "nominal"}
+    }
+  },
+
+  {
+    "layer": [
+      {
+        "title": "Dogs",
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "field": "Location", "axis": null, "sort": "ascending"
+          },
+          "x": {
+            "aggregate": "sum", "field": "PercentageofDogOwners",
+            "title": "Percentage of Dogs Owners",
+            "axis": {"format": "s"}            
+            },
+          "color": {
+            "scale": {"range": ["#ca8861"]},
+            "legend": null
+          },
+          "tooltip": [
+              {"field": "Location", "type": "nominal", "title": "States"},
+              {
+                "field": "PercentageofDogOwners",
+                "type": "quantitative",
+                "format": ",",
+                "title": "Percentage of Dog Owners"
+              }
+            ]
+        }
+      },
+
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "dx": 5,
+          "stroke": "white",
+          "strokeWidth": 5
+        },
+        "encoding": {
+          "y": {
+            "field": "Location",
+            "title": null,
+            "axis": null,
+            "sort": "descending"
+          },
+          "x": {
+            "aggregate": "sum",
+            "field": "PercentageofDogOwners",
+            "axis": {"format": "s"},
+            "scale": {"domain": [0, 60]}
+          },
+          "color": {"field": "PercentageofDogOwners", "type": "nominal"},
+          "text": {
+            "aggregate": "sum",
+            "field": "PercentageofDogOwners",
+            "type": "quantitative",
+            "format": ","
+          }
+        }
+      },
+      {
+        "mark": {"type": "text", "align": "left", "dx": 5},
+        "encoding": {
+          "y": {
+            "field": "Location",
+            "title": null,
+            "axis": null,
+            "sort": "descending"
+          },
+          "x": {
+            "aggregate": "sum",
+            "field": "PercentageofDogOwners",
+            "axis": {"format": "s"},
+            "scale": {"domain": [0, 60]}
+          },
+          "color": {"field": "PercentageofDogOwners", "type": "nominal"},
+          "key": {"field": "Location"},
+          "text": {
+            "aggregate": "sum",
+            "field": "PercentageofDogOwners",
+            "type": "quantitative",
+            "format": ","
+          }
+        }
+      }
+    ]
+  }
+],
+"config": {
+  "view": {"stroke": null},
+  "axis": {"grid": true}
+}
+}
