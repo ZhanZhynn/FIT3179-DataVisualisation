@@ -13,7 +13,7 @@
     "mark": {"type": "arc", "innerRadius": 100},
     "encoding": {
       "theta": {"field": "value", "type": "quantitative", "stack": true,"scale": {"reverse": true}},
-      "color": {"field": "Pets", "type": "nominal","scale":{"range": [" #727171","#964B00"]}},
+      "color": {"field": "Pets", "type": "nominal","scale":{"range": [" #727171"," #CF7250"]}},
       
       "tooltip": [
       {"field": "Pets", "type": "nominal", "title": "Pet"},
