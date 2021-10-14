@@ -16,7 +16,7 @@
       "color": {"field": "Pets", "type": "nominal"},
       
       "tooltip": [
-      {"field": "Pets", "type": "nominal", "title": "Pets"},
+      {"field": "Pets", "type": "nominal", "title": "States"},
 
       {
         "field": "population",
@@ -34,6 +34,15 @@
       "encoding": {
         "text": {"field": "value", "type": "quantitative"}
       }
-    }]
+    },
+    {
+      "mark": {"type": "text", "radius": 180,"dy":-15},
+      "encoding": {
+        "text": {"field": "Pets", "type": "nominal"}
+      }
+    }
+    
+    
+    ]
   
 }
