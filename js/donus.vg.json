@@ -1,0 +1,24 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A simple pie chart with labels.",
+    "data": {
+      "values": [
+        {"Pets": "Dog", "value": 18000},
+        {"Pets": "Cat", "value": 15000}
+      ]
+    },
+    "mark": {"type": "arc", "innerRadius": 50},
+    "encoding": {
+      "theta": {"field": "value", "type": "quantitative", "stack": true},
+      "color": {"field": "Pets", "type": "nominal"}
+    },
+  
+    "layer": [{
+      "mark": {"type": "arc", "innerRadius": 50}
+    }, {
+      "mark": {"type": "text", "radius": 120},
+      "encoding": {
+        "text": {"field": "value", "type": "quantitative"}
+      }
+    }]
+  }
