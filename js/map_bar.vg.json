@@ -12,7 +12,7 @@
           {"name": "continent_highlight", 
           "select": {"type": "point","fields":["Region"]}, "bind": "legend"}
           ],
-          "width": 650,
+          "width": 500,
           "height": 300,
           "mark": {"type": "square"},
           "encoding": {
@@ -86,7 +86,7 @@
       "layer": [
         {
       "title": "Average Number of Pet Households (1000s)",
-            "width": 733,
+            "width": 600,
             "mark": "bar",
             "encoding": {
               "x": {"field": "Location", 
