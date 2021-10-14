@@ -87,7 +87,7 @@
     {
       "layer": [
         {
-      "title": "Average Number of Pet Households (1000s)",
+      "title": "Pet Households by States",
             "width": 700,
             "mark": "bar",
             "encoding": {
@@ -97,7 +97,8 @@
                 "axis": {"labels": false}
                 },
               "y": {
-                "aggregate": "mean",
+                "title": "Number of households (1000s)",
+                "aggregate": "sum",
                 "field": "NumberofPetHouseholds",
                 "type": "quantitative"
               },
