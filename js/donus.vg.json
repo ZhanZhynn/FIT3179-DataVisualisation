@@ -6,13 +6,13 @@
     "description": "Overview of Dogs and Cats in US",
     "data": {
       "values": [
-        {"Pets": "Dog", "value": 48.65, "population":69294},
-        {"Pets": "Cat", "value": 51.35,"population":73147}
+        {"Pets": "Dog", "value": 0.4865, "population":69294},
+        {"Pets": "Cat", "value": 0.5135,"population":73147}
       ]
     },
     "mark": {"type": "arc", "innerRadius": 100},
     "encoding": {
-      "theta": {"field": "value", "type": "quantitative", "stack": true},
+      "theta": {"field": "value", "type": "quantitative", "stack": true,"scale":    {"reverse": true}},
       "color": {"field": "Pets", "type": "nominal"},
       
       "tooltip": [
@@ -32,13 +32,13 @@
     }, {
       "mark": {"type": "text", "radius": 180},
       "encoding": {
-        "text": {"field": "value", "type": "quantitative"}
+        "text": {"field": "value", "type": "quantitative","format": ".2%"}
       }
     },
     {
       "mark": {"type": "text", "radius": 180,"dy":-15},
       "encoding": {
-        "text": {"field": "Pets", "type": "nominal"}
+        "text": {"field": "Pets", "type": "nominal","fontWeight": "bold"}
       }
     }
     
