@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Cats vs Dogs</title>
+    <title>Cats vs Dogs in US</title>
     <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
     <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
@@ -17,15 +17,18 @@
 
     <!-- CSS file -->
     <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
-
-
 </head>
 
 <body>
 
     <div class="page">
 
-        <h2>Overview of Pets Households in US</h2>
+        <h1>Pets Ownership in United States</h1>
+        <h2>A Little Introduction</h2>
+        <p>
+          Number of Pet Households across the United States
+        </p>
+       
         <!-- pure grid group -->
         <div class="pure-g">
             <div class="pure-u-1-1">
@@ -231,9 +234,6 @@
     <script type="text/javascript">
         var specVis1 = "js/map_bar.vg.json";
         vegaEmbed('#vis1', specVis1);
-
-        var specVis2 = "js/barHM10.vg.json";
-        vegaEmbed('#vis2', specVis2);
 
         var specVis3 = "js/donus.vg.json";
         vegaEmbed('#box', specVis3);
