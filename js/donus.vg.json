@@ -16,7 +16,7 @@
       "color": {"field": "Pets", "type": "nominal"},
       
       "tooltip": [
-      {"field": "Pets", "type": "nominal", "title": "States"},
+      {"field": "Pets", "type": "nominal", "title": "Pet"},
 
       {
         "field": "population",
