@@ -1,8 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "config": {"view": {"stroke": ""}},
-    "width":400,
-    "height":400,
+    "width":300,
+    "height":300,
     "description": "Overview of Dogs and Cats in US",
     "data": {
       "values": [
@@ -30,7 +30,7 @@
     "layer": [{
       "mark": {"type": "arc", "innerRadius": 100}
     }, {
-      "mark": {"type": "text", "radius": 250},
+      "mark": {"type": "text", "radius": 180},
       "encoding": {
         "text": {"field": "value", "type": "quantitative"}
       }
