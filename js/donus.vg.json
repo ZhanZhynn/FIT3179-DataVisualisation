@@ -1,5 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width":400,
+    "height":400,
     "description": "A simple pie chart with labels.",
     "data": {
       "values": [
@@ -7,18 +9,29 @@
         {"Pets": "Cat", "value": 15000}
       ]
     },
-    "mark": {"type": "arc", "innerRadius": 50},
+    "mark": {"type": "arc", "innerRadius": 100},
     "encoding": {
       "theta": {"field": "value", "type": "quantitative", "stack": true},
       "color": {"field": "Pets", "type": "nominal"}
     },
   
     "layer": [{
-      "mark": {"type": "arc", "innerRadius": 50}
+      "mark": {"type": "arc", "innerRadius": 100}
     }, {
-      "mark": {"type": "text", "radius": 120},
+      "mark": {"type": "text", "radius": 250},
       "encoding": {
-        "text": {"field": "value", "type": "quantitative"}
+        "text": {"field": "value", "type": "quantitative"},
+
+      "tooltip": [
+      {"field": "Pets", "type": "nominal", "title": "States"},
+
+      {
+        "field": "value",
+        "type": "quantitative",
+        "format": ",",
+        "title": "Number of Pet Dogs (1000s)"
+      }
+    ]
       }
     }]
   }
