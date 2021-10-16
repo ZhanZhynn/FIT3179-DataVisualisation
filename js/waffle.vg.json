@@ -1,0 +1,47 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Cats vs Dogs",
+      "dx": 20,
+      "font": "sans-serif",
+      "fontSize": 17
+    },
+    "width": 400,
+    "height": 400,
+    "data": {
+      "url": "https://raw.githubusercontent.com/ZhanZhynn/FIT3179-Visualization2/main/data/waffle_data.csv"
+    },
+    "mark": {"type": "circle", "size": 1200},
+    "transform": [{"calculate": "datum.pet", "as": "Pets"}],
+    "encoding": {
+      "x": {"field": "column", "type": "quantitative", "axis": null},
+      "y": {"field": "row", "type": "quantitative", "axis": null},
+      "color": {
+        "field": "pet",
+        "type": "nominal",
+        "scale": {
+          "type": "ordinal",
+          "domain": ["Cat", "Dog"],
+          "range": ["#727171"," #CF7250"]
+        },
+        
+        "legend": {"title": "Pets"}
+      },
+        "tooltip": [
+        {"field": "Pets", "type": "nominal", "title": "Pet"},
+        {
+          "field": "overall_per",
+          "type": "nominal",
+          "title": "Percentage"
+        },
+              {
+          "field": "population",
+          "type": "nominal",
+          "format": ",",
+          "title": "Raw Population (1000s)"
+        }
+      ]
+    },
+  
+    "config": {"style": {"cell": {"stroke": "transparent"}}}
+  }
