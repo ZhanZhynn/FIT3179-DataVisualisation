@@ -1,0 +1,69 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A population pyramid for pets in region.",
+    "data": { "url": "https://raw.githubusercontent.com/ZhanZhynn/FIT3179-Visualization2/main/data/catsvdogs.csv"},
+
+  "spacing": 0,
+  "hconcat": [{
+    "width":250,
+    "height":150,
+    "title": "Cats",
+    "mark": "bar",
+    "encoding": {
+      "y": {
+        "field": "Region", "axis": null, "sort": "descending"
+      },
+      "x": {
+        "aggregate": "sum", "field": "CatOwningHouseholds",
+        "title": "Cat Owners",
+        "axis": {"format": "s"},
+        "sort": "descending",
+        "scale": {"domain": [0, 19000]}
+      },
+      "color": {
+        "legend": null
+      }
+    }
+    
+  }, 
+  {
+    "width": 50,
+    "height":150,
+    "view": {"stroke": null},
+    "mark": {
+      "type": "text",
+      "align": "center"
+    },
+    "encoding": {
+      "y": {"field": "Region", "type": "ordinal", "axis": null, "sort": "descending"},
+      "text": {"field": "Region", "type": "ordinal"}
+    }
+  }, {
+
+    "title": "Dogs",
+    "width":250,
+    "height":150,
+    "mark": "bar",
+    "encoding": {
+      "y": {
+        "field": "Region", "title": null,
+        "axis": null, "sort": "descending"
+      },
+      "x": {
+        "aggregate": "sum", "field": "DogOwningHouseholds",
+        "title": "Dog Owners",
+        "axis": {"format": "s"},
+        "scale": {"domain": [0, 19000]}
+      },
+      "color": {
+        "field": "Pets",
+        "scale": {"range": ["#ca8861"]},
+        "legend": null
+      }
+    }
+  }],
+  "config": {
+    "view": {"stroke": null},
+    "axis": {"grid": true}
+  }
+}

@@ -1,0 +1,48 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "config": {"view": {"stroke": ""}},
+    "width":350,
+    "height":200,
+    "description": "Overview of Dogs and Cats in US",
+    "data": {
+      "values": [
+        {"Pets": "Dog", "value": 0.5462, "Owners":42942},
+        {"Pets": "Cat", "value": 0.4538, "Owners":35675}
+      ]
+    },
+    "mark": {"type": "arc", "innerRadius": 50},
+    "encoding": {
+      "theta": {"field": "value", "type": "quantitative", "stack": true,"scale": {"reverse": false}},
+      "color": {"field": "Pets", "type": "nominal","legend": null,"scale":{"range": ["#4c78a8","#CF7250"]}},
+      
+      "tooltip": [
+      {"field": "Pets", "type": "nominal", "title": "Pet"},
+  
+      {
+        "field": "Owners",
+        "type": "quantitative",
+        "format": ",",
+        "title": "Pets Owners (1000s)"
+      }
+    ]
+    },
+  
+    "layer": [{
+      "mark": {"type": "arc", "innerRadius": 60}
+    }, {
+      "mark": {"type": "text", "radius": 130},
+      "encoding": {
+        "text": {"field": "value", "type": "quantitative","format": ".2%"}
+      }
+    },
+    {
+      "mark": {"type": "text", "radius": 130,"dy":-15},
+      "encoding": {
+        "text": {"field": "Pets", "type": "nominal","fontWeight": "bold"}
+      }
+    }
+    
+    
+    ]
+  
+  }

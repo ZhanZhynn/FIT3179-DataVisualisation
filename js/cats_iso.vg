@@ -1,0 +1,110 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "config": {"view": {"stroke": ""}},
+    "width": 70,
+    "height": 200,
+    "data": {
+      "values": [
+  
+        {"Location": "#1 California", "State":"California", "animal": "cat","value":7118},
+        {"Location": "#1 California", "State":"California", "animal": "cat","value":7118},
+        {"Location": "#1 California", "State":"California", "animal": "cat","value":7118},
+        {"Location": "#1 California", "State":"California", "animal": "cat","value":7118},
+        {"Location": "#1 California", "State":"California", "animal": "cat","value":7118},
+        {"Location": "#1 California", "State":"California", "animal": "cat","value":7118},
+        {"Location": "#1 California", "State":"California", "animal": "cat","value":7118},
+        {"Location": "#1 California", "State":"California", "animal": "cat","value":7118},
+        {"Location": "#1 California", "State":"California", "animal": "cat","value":7118},
+        {"Location": "#1 California", "State":"California", "animal": "cat","value":7118},
+  
+        {"Location": "#2 Texas", "State":"Texas", "animal": "cat", "value": 5565},
+        {"Location": "#2 Texas", "State":"Texas", "animal": "cat", "value": 5565},
+        {"Location": "#2 Texas", "State":"Texas", "animal": "cat", "value": 5565},
+        {"Location": "#2 Texas", "State":"Texas", "animal": "cat", "value": 5565},
+        {"Location": "#2 Texas", "State":"Texas", "animal": "cat", "value": 5565},
+        {"Location": "#2 Texas", "State":"Texas", "animal": "cat", "value": 5565},
+        {"Location": "#2 Texas", "State":"Texas", "animal": "cat", "value": 5565},
+        {"Location": "#2 Texas", "State":"Texas", "animal": "cat", "value": 5565},
+  
+  
+        {"Location": "#3 Florida", "State":"Florida", "animal": "cat", "value":4375},
+        {"Location": "#3 Florida", "State":"Florida", "animal": "cat", "value":4375},
+        {"Location": "#3 Florida", "State":"Florida", "animal": "cat", "value":4375},
+        {"Location": "#3 Florida", "State":"Florida", "animal": "cat", "value":4375},
+        {"Location": "#3 Florida", "State":"Florida", "animal": "cat", "value":4375},
+        {"Location": "#3 Florida", "State":"Florida", "animal": "cat", "value":4375},
+  
+  
+  
+        
+        {"Location": "#4 New York", "State":"New York", "animal": "cat","value":4261},
+        {"Location": "#4 New York", "State":"New York", "animal": "cat","value":4261},
+        {"Location": "#4 New York", "State":"New York", "animal": "cat","value":4261},
+        {"Location": "#4 New York", "State":"New York", "animal": "cat","value":4261},
+        {"Location": "#4 New York", "State":"New York", "animal": "cat","value":4261},
+        {"Location": "#4 New York", "State":"New York", "animal": "cat","value":4261},
+  
+  
+  
+        {"Location": "#5 Ohio", "State":"Ohio",  "animal": "cat","value":3786},
+        {"Location": "#5 Ohio", "State":"Ohio",  "animal": "cat","value":3786},
+        {"Location": "#5 Ohio", "State":"Ohio",  "animal": "cat","value":3786},
+        {"Location": "#5 Ohio", "State":"Ohio",  "animal": "cat","value":3786},
+        {"Location": "#5 Ohio", "State":"Ohio",  "animal": "cat","value":3786},
+  
+  
+  
+        {"Location": "#6 Pennsylvania", "State":"Pennsylvania",  "animal": "cat","value":3544},
+        {"Location": "#6 Pennsylvania", "State":"Pennsylvania", "animal": "cat","value":3544},
+        {"Location": "#6 Pennsylvania", "State":"Pennsylvania", "animal": "cat","value":3544},
+        {"Location": "#6 Pennsylvania", "State":"Pennsylvania", "animal": "cat","value":3544},
+        {"Location": "#6 Pennsylvania", "State":"Pennsylvania", "animal": "cat","value":3544},
+  
+  
+        {"Location": "#7 Illinois", "State":"Illinois", "animal": "cat","value":2453},
+        {"Location": "#7 Illinois", "State":"Illinois", "animal": "cat","value":2453},
+        {"Location": "#7 Illinois", "State":"Illinois", "animal": "cat","value":2453},
+        {"Location": "#7 Illinois", "State":"Illinois", "animal": "cat","value":2453},
+  
+  
+  
+        {"Location": "#8 Michigan", "State":"Illinois", "animal": "cat","value":2420},
+        {"Location": "#8 Michigan", "State":"Illinois", "animal": "cat","value":2420},
+        {"Location": "#8 Michigan", "State":"Illinois", "animal": "cat","value":2420},
+  
+  
+        {"Location": "#9 North Carolina", "State":"North Carolina", "animal": "cat","value":2220},
+        {"Location": "#9 North Carolina", "State":"North Carolina", "animal": "cat","value":2220},
+        {"Location": "#9 North Carolina", "State":"North Carolina", "animal": "cat","value":2220}
+      ]
+    },
+  
+    "transform": [
+      {"calculate": "{'cat': '🐟'}[datum.animal]","as": "emoji"},
+      {"window": [{"op": "rank", "as": "rank"}], "groupby": ["Location", "animal"]}
+    ],
+  
+    "mark": {"type": "text", "baseline": "bottom"},
+    "encoding": {
+      "x": {"field": "animal", "type": "nominal", "axis": null, "sort": "descending"},
+      "y": {"field": "rank", "type": "quantitative", "axis": null},
+      
+      "column": {"field": "Location", "header": {"title": "Number of Pet Cats in Thousands"}},
+      "text": {"field": "emoji", "type": "ordinal"},
+      "size": {"value": 20},
+  
+      "tooltip": [
+        {"field": "State", "type": "nominal", "title": "State"},
+  
+        {
+          "field": "value",
+          "type": "quantitative",
+          "format": ",",
+          "title": "Number of Pet Cats (1000s)"
+        }
+      ]
+    }
+  
+  
+  }
+  
