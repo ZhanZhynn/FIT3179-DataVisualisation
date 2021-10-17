@@ -97,7 +97,7 @@
                 "axis": {"labels": false}
                 },
               "y": {
-                "title": "Number of households (1000s)",
+                "title": "Number of Pet households (1000s)",
                 "aggregate": "sum",
                 "field": "NumberofPetHouseholds",
                 "type": "quantitative"
