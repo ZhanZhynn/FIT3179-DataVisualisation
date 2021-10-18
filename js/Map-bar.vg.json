@@ -118,7 +118,7 @@
                   "field": "NumberofPetHouseholds",
                   "type": "quantitative",
                   "format": ",",
-                  "title": "Number of Pets Households"
+                  "title": "Number of Pets Households (1000s)"
                 }
               ]
             }
