@@ -5,69 +5,69 @@
   "height": 200,
   "data": {
     "values": [
-      {"Location": "#1 Texas", "animal": "dog", "value": 7163},
-      {"Location": "#1 Texas", "animal": "dog", "value": 7163},
-      {"Location": "#1 Texas", "animal": "dog", "value": 7163},
-      {"Location": "#1 Texas", "animal": "dog", "value": 7163},
-      {"Location": "#1 Texas", "animal": "dog", "value": 7163},
-      {"Location": "#1 Texas", "animal": "dog", "value": 7163},
-      {"Location": "#1 Texas", "animal": "dog", "value": 7163},
-      {"Location": "#1 Texas", "animal": "dog", "value": 7163},
-      {"Location": "#1 Texas", "animal": "dog", "value": 7163},
-      {"Location": "#1 Texas", "animal": "dog", "value": 7163},
+      {"Location": "#1 Texas", "State":"Texas", "animal": "dog", "value": 7163},
+      {"Location": "#1 Texas", "State":"Texas", "animal": "dog", "value": 7163},
+      {"Location": "#1 Texas", "State":"Texas", "animal": "dog", "value": 7163},
+      {"Location": "#1 Texas", "State":"Texas", "animal": "dog", "value": 7163},
+      {"Location": "#1 Texas", "State":"Texas", "animal": "dog", "value": 7163},
+      {"Location": "#1 Texas", "State":"Texas", "animal": "dog", "value": 7163},
+      {"Location": "#1 Texas", "State":"Texas", "animal": "dog", "value": 7163},
+      {"Location": "#1 Texas", "State":"Texas", "animal": "dog", "value": 7163},
+      {"Location": "#1 Texas", "State":"Texas", "animal": "dog", "value": 7163},
+      {"Location": "#1 Texas", "State":"Texas", "animal": "dog", "value": 7163},
 
 
-      {"Location": "#2 California", "animal": "dog","value":6687},
-      {"Location": "#2 California", "animal": "dog","value":6687},
-      {"Location": "#2 California", "animal": "dog","value":6687},
-      {"Location": "#2 California", "animal": "dog","value":6687},
-      {"Location": "#2 California", "animal": "dog","value":6687},
-      {"Location": "#2 California", "animal": "dog","value":6687},
-      {"Location": "#2 California", "animal": "dog","value":6687},
-      {"Location": "#2 California", "animal": "dog","value":6687},
-      {"Location": "#2 California", "animal": "dog","value":6687},
+      {"Location": "#2 California", "State":"California", "animal": "dog","value":6687},
+      {"Location": "#2 California", "State":"California", "animal": "dog","value":6687},
+      {"Location": "#2 California", "State":"California", "animal": "dog","value":6687},
+      {"Location": "#2 California", "State":"California", "animal": "dog","value":6687},
+      {"Location": "#2 California", "State":"California", "animal": "dog","value":6687},
+      {"Location": "#2 California", "State":"California", "animal": "dog","value":6687},
+      {"Location": "#2 California", "State":"California", "animal": "dog","value":6687},
+      {"Location": "#2 California", "State":"California", "animal": "dog","value":6687},
+      {"Location": "#2 California", "State":"California", "animal": "dog","value":6687},
 
 
-      {"Location": "#3 Florida", "animal": "dog", "value":4210},
-      {"Location": "#3 Florida", "animal": "dog", "value":4210},
-      {"Location": "#3 Florida", "animal": "dog", "value":4210},
-      {"Location": "#3 Florida", "animal": "dog", "value":4210},
-      {"Location": "#3 Florida", "animal": "dog", "value":4210},
-      {"Location": "#3 Florida", "animal": "dog", "value":4210},
+      {"Location": "#3 Florida", "State":"Florida", "animal": "dog", "value":4210},
+      {"Location": "#3 Florida", "State":"Florida", "animal": "dog", "value":4210},
+      {"Location": "#3 Florida", "State":"Florida", "animal": "dog", "value":4210},
+      {"Location": "#3 Florida", "State":"Florida", "animal": "dog", "value":4210},
+      {"Location": "#3 Florida", "State":"Florida", "animal": "dog", "value":4210},
+      {"Location": "#3 Florida", "State":"Florida", "animal": "dog", "value":4210},
 
 
       
-      {"Location": "#4 New York", "animal": "dog","value":3054},
-      {"Location": "#4 New York", "animal": "dog","value":3054},
-      {"Location": "#4 New York", "animal": "dog","value":3054},
-      {"Location": "#4 New York", "animal": "dog","value":3054},
+      {"Location": "#4 New York", "State":"New York", "animal": "dog","value":3054},
+      {"Location": "#4 New York", "State":"New York", "animal": "dog","value":3054},
+      {"Location": "#4 New York", "State":"New York", "animal": "dog","value":3054},
+      {"Location": "#4 New York", "State":"New York", "animal": "dog","value":3054},
 
 
-      {"Location": "#5 Ohio", "animal": "dog","value":2730},
-      {"Location": "#5 Ohio", "animal": "dog","value":2730},
-      {"Location": "#5 Ohio", "animal": "dog","value":2730},
-      {"Location": "#5 Ohio", "animal": "dog","value":2730},
+      {"Location": "#5 Ohio", "State":"Ohio", "animal": "dog","value":2730},
+      {"Location": "#5 Ohio", "State":"Ohio", "animal": "dog","value":2730},
+      {"Location": "#5 Ohio", "State":"Ohio", "animal": "dog","value":2730},
+      {"Location": "#5 Ohio", "State":"Ohio", "animal": "dog","value":2730},
 
 
-      {"Location": "#6 North Carolina", "animal": "dog","value":2518},
-      {"Location": "#6 North Carolina", "animal": "dog","value":2518},
-      {"Location": "#6 North Carolina", "animal": "dog","value":2518},
-      {"Location": "#6 North Carolina", "animal": "dog","value":2518},
+      {"Location": "#6 North Carolina", "State":"North Carolina", "animal": "dog","value":2518},
+      {"Location": "#6 North Carolina", "State":"North Carolina", "animal": "dog","value":2518},
+      {"Location": "#6 North Carolina", "State":"North Carolina", "animal": "dog","value":2518},
+      {"Location": "#6 North Carolina", "State":"North Carolina", "animal": "dog","value":2518},
 
 
-      {"Location": "#7 Pennsylvania", "animal": "dog","value":2485},
-      {"Location": "#7 Pennsylvania", "animal": "dog","value":2485},
-      {"Location": "#7 Pennsylvania", "animal": "dog","value":2485},
+      {"Location": "#7 Pennsylvania", "State":"Pennsylvania", "animal": "dog","value":2485},
+      {"Location": "#7 Pennsylvania", "State":"Pennsylvania", "animal": "dog","value":2485},
+      {"Location": "#7 Pennsylvania", "State":"Pennsylvania", "animal": "dog","value":2485},
 
 
-      {"Location": "#8 Georgia", "animal": "dog","value":2479},
-      {"Location": "#8 Georgia", "animal": "dog","value":2479},
-      {"Location": "#8 Georgia", "animal": "dog","value":2479},
+      {"Location": "#8 Georgia", "State":"Georgia", "animal": "dog","value":2479},
+      {"Location": "#8 Georgia", "State":"Georgia", "animal": "dog","value":2479},
+      {"Location": "#8 Georgia", "State":"Georgia", "animal": "dog","value":2479},
 
 
-      {"Location": "#9 Illinois", "animal": "dog","value":2365},
-      {"Location": "#9 Illinois", "animal": "dog","value":2365},
-      {"Location": "#9 Illinois", "animal": "dog","value":2365}
+      {"Location": "#9 Illinois", "State":"Illinois", "animal": "dog","value":2365},
+      {"Location": "#9 Illinois", "State":"Illinois", "animal": "dog","value":2365},
+      {"Location": "#9 Illinois", "State":"Illinois", "animal": "dog","value":2365}
     ]
   },
 
