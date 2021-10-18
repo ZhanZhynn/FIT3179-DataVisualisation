@@ -86,7 +86,7 @@
     "size": {"value": 20},
 
     "tooltip": [
-      {"field": "Location", "type": "nominal", "title": "States"},
+      {"field": "Location", "type": "nominal", "title": "State"},
 
       {
         "field": "value",
