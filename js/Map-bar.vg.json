@@ -113,7 +113,7 @@
                     "value": 0.1
                   },
               "tooltip": [
-                {"field": "Location", "type": "nominal", "title": "States"},
+                {"field": "Location", "type": "nominal", "title": "State"},
                 {
                   "field": "NumberofPetHouseholds",
                   "type": "quantitative",
