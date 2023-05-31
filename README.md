@@ -11,5 +11,3 @@ Datasets are Cat vs Dog Popularity in the US (Tableau Public, 2021) and US Censu
 Bureau Regions and Division (Halpert, 2014).
 
 
-Link to webpage: https://zhanzhynn.github.io/FIT3179-Visualization2/
-
