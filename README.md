@@ -1,4 +1,6 @@
 # Data Visualisation
+Data visual using Vega-Lite
+
 The domain of the visualisation is based on the pet dogs and cats’ population in the United
 States.
 
